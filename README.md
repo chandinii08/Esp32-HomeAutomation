@@ -65,6 +65,7 @@
 - Dual-core microcontroller with integrated Wi-Fi and Bluetooth for IoT applications.
 - Can run multiple tasks simultaneously, making it ideal for automation.
 - Supports numerous GPIO pins, ADC/DAC, PWM, and communication protocols like I²C, SPI, UART.
+
 **2. Solid State Relay**
 - Switches AC loads silently with no mechanical wear.
 - Operated by a small DC voltage from the ESP32, isolating low and high voltage.
