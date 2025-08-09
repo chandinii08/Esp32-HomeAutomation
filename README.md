@@ -138,60 +138,57 @@
 | PVC  Encoser | 200  |
 
 # Software and Tools Used
+*1. Software Required*
+| Software                                       | Purpose                                                         |
+| ---------------------------------------------- | --------------------------------------------------------------- |
+| *Arduino IDE*                                  | Used to write, compile, and upload programs to the ESP32.       |
+| *ESP32 Board Support Package*                  | Enables ESP32 compatibility within the Arduino IDE.             |
+| *ESPAsyncWebServer Library*                    | Hosts a web-based control panel on the ESP32.                   |
+| *AsyncTCP Library*                             | Manages real-time communication for smooth control and updates. |
+| *WiFi.h Library*                               | Connects the ESP32 to a Wi-Fi network for remote access.        |
+| *EEPROM.h*                                     | Saves user settings (such as schedules) directly on the ESP32.  |
+| *HTML, CSS, JavaScript*                        | Used to design and style the web-based control panel interface.  |
+| *Wokwi Simulator*                              | Simulates ESP32 circuits and code before deploying to actual hardware|
+|       *GitHub*                                 | Stores project code and enables version control for collaboratio.|
+
 # Working Principle
 
 1. Initialization
 
 When powered on, the ESP32 initializes its GPIO pins for controlling relays and reading sensors (if any).
-
 It loads saved configurations (Wi-Fi credentials, schedules, device states) from EEPROM or onboard file storage.
-
 
 2. Wi-Fi Connection
 
 The ESP32 connects to the home Wi-Fi network using stored credentials.
-
 If credentials are unavailable, it can start in Access Point (AP) Mode to let the user input network details.
-
 
 3. Web Server Setup
 
 Using the ESPAsyncWebServer library, the ESP32 hosts a web-based control panel.
-
 HTML, CSS, and JavaScript files are served to the user’s browser, providing buttons, sliders, and status displays.
-
 REST API or WebSocket endpoints are created for sending and receiving control commands in real-time.
-
 
 4. User Control
 
 The user accesses the control panel through a browser on a smartphone or computer.
-
 By pressing buttons or adjusting sliders, the user sends commands to the ESP32 over Wi-Fi.
-
 
 5. Relay Switching
 
 Upon receiving a control signal, the ESP32 toggles the corresponding GPIO pin, activating or deactivating the connected relay.
-
 The relay switches the household appliance ON or OFF.
-
 
 6. Real-Time Monitoring
 
 Using WebSocket or AJAX, the ESP32 sends instant feedback to the user interface, showing whether a device is ON or OFF.
-
 Sensors (optional) can provide extra data like temperature, current consumption, or light levels.
-
 
 7. Scheduling and Automation
 
 The ESP32 uses an external RTC (Real-Time Clock) module for accurate timekeeping, even during power outages.
-
 Based on the schedules set by the user, the system automatically turns devices ON or OFF at specified times.
-
 Conditions such as sensor readings can also trigger automated actions.
-
 
 8. Data Storage
 
