@@ -138,7 +138,78 @@
 | PVC  Encoser | 200  |
 
 # Software and Tools Used
-# Working Principle                                           
+# Working Principle
+1. Initialization
+
+When powered on, the ESP32 initializes its GPIO pins for controlling relays and reading sensors (if any).
+
+It loads saved configurations (Wi-Fi credentials, schedules, device states) from EEPROM or onboard file storage.
+
+
+
+2. Wi-Fi Connection
+
+The ESP32 connects to the home Wi-Fi network using stored credentials.
+
+If credentials are unavailable, it can start in Access Point (AP) Mode to let the user input network details.
+
+
+
+3. Web Server Setup
+
+Using the ESPAsyncWebServer library, the ESP32 hosts a web-based control panel.
+
+HTML, CSS, and JavaScript files are served to the user’s browser, providing buttons, sliders, and status displays.
+
+REST API or WebSocket endpoints are created for sending and receiving control commands in real-time.
+
+
+
+4. User Control
+
+The user accesses the control panel through a browser on a smartphone or computer.
+
+By pressing buttons or adjusting sliders, the user sends commands to the ESP32 over Wi-Fi.
+
+
+
+5. Relay Switching
+
+Upon receiving a control signal, the ESP32 toggles the corresponding GPIO pin, activating or deactivating the connected relay.
+
+The relay switches the household appliance ON or OFF.
+
+
+
+6. Real-Time Monitoring
+
+Using WebSocket or AJAX, the ESP32 sends instant feedback to the user interface, showing whether a device is ON or OFF.
+
+Sensors (optional) can provide extra data like temperature, current consumption, or light levels.
+
+
+
+7. Scheduling and Automation
+
+The ESP32 uses an external RTC (Real-Time Clock) module for accurate timekeeping, even during power outages.
+
+Based on the schedules set by the user, the system automatically turns devices ON or OFF at specified times.
+
+Conditions such as sensor readings can also trigger automated actions.
+
+
+
+8. Data Storage
+
+Settings, schedules, and device states are stored in EEPROM or onboard storage (LittleFS/SPIFFS) so they persist after power loss.
+
+
+
+9. Safety and Security
+
+Direct relay control is used without opto-couplers, with proper wiring precautions to ensure safety.
+
+Password or token-based authentication can be implemented to prevent unauthorized control.
 # CAD Diagrams
 # Circuit Diagrams
 # Conclusion
