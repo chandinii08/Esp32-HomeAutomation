@@ -70,50 +70,62 @@
 - Switches AC loads silently with no mechanical wear.
 - Operated by a small DC voltage from the ESP32, isolating low and high voltage.
 - Faster switching than mechanical relays, ideal for frequent operations.
+- 
 **3. NPN BJT **
 - Acts as an electronic switch or amplifier.
 - Allows ESP32’s low-current GPIO to control higher-current devices.
 - Commonly used in relay driver circuits with a flyback diode.
+- 
 **4. 10kΩ Resistor**
 - Standard resistor value used for pull-up and pull-down configurations.
 - Stabilizes digital inputs to prevent false triggering.
 - Can limit current in LED or sensor circuits.
+- 
 **5. 5V SMPS** 
 - Compact, high-efficiency AC-to-DC power converter.
 - Delivers regulated 5V output for microcontroller and peripherals.
 - Safer and cooler than traditional linear adapters.
+- 
 **6. 220V Mains**
 - Main AC power supply source for the system.
 - Directly powers SMPS and high-voltage devices via relays.
 - Requires proper insulation and safety measures.
+- 
 **7. PVC Extension Board**
 - Multiple socket board for connecting AC devices.
 - Durable PVC body for electrical insulation.
 - Serves as the load connection hub in the automation setup.
+- 
 **8. RTC Clock Module**
 - Keeps accurate time using an onboard crystal and battery backup.
 - Works independently of ESP32’s power state.
 - Used for scheduled tasks like switching lights at specific times.
+- 
 **9. 1S BMS**
 - Battery Management System for a single Li-ion cell.
 - Prevents overcharging, deep discharge, and short circuits.
 - Extends battery lifespan and ensures safety.
+- 
 **10. LDR
 - Resistance changes based on light intensity.
 - Used for light-sensitive switching, e.g., turning lights on at night.
 - Simple, low-cost sensor with easy interfacing.
+- 
 **11. Breadboard**
 - Allows solderless and reusable circuit assembly.
 - Helpful for quick prototyping and testing connections.
 - Supports both power rails and signal distribution.
+- 
 **12. Lithium-ion Battery**
 - Rechargeable power source with high energy density.
 - Suitable for backup or portable operation of the ESP32.
 - Works with BMS for safe charging and discharging.
+- 
 **13. Jumper Wires**
 - Flexible connectors for breadboard and module wiring.
 - Available in male-to-male, male-to-female, and female-to-female types.
 - Reusable and ideal for temporary connections.
+- 
 **14. 2-Pin SPST Switch**
 - Single Pole Single Throw — basic ON/OFF switch.
 - Can control power flow or act as a manual trigger.
