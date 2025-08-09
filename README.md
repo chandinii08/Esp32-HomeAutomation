@@ -138,7 +138,7 @@
 | PVC  Encoser | 200  |
 
 # Software and Tools Used
-# Working Principle
+# Working Principle                                           
 # CAD Diagrams
 # Circuit Diagrams
 # Conclusion
