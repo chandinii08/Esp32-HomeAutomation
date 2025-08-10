@@ -201,3 +201,5 @@ Direct relay control is used without opto-couplers, with proper wiring precautio
 # CAD Diagrams
 # Circuit Diagrams
 # Conclusion
+The ESP32 Home Automation project successfully achieved its intended goals. It provided seamless remote control of appliances via a web interface, ensured real-time status monitoring for instant feedback, and implemented automated scheduling to optimize energy usage. The system’s modular and scalable design ensures that future devices and sensors can be integrated with minimal effort, making it adaptable for evolving needs.
+Through this project, I gained hands-on experience in IoT hardware–software integration, web-based interface development, and efficient automation strategies. I also learned the importance of designing with user convenience, energy efficiency, and future expansion in mind. This experience not only strengthened my technical skills but also enhanced my problem-solving abilities in creating practical, real-world IoT solutions.
