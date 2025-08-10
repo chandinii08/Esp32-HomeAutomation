@@ -206,12 +206,12 @@ Settings, schedules, and device states are stored in EEPROM or onboard storage (
 Direct relay control is used without opto-couplers, with proper wiring precautions to ensure safety.
 # CAD Diagrams
 
-![[IMG-20250810-WA0016.jpg]]
-![[IMG-20250810-WA0017.jpg]]
+![[https://raw.githubusercontent.com/Rudra0Panda/Esp32-HomeAutomation/refs/heads/main/IMG-20250810-WA0016.jpg]]
+![[https://raw.githubusercontent.com/Rudra0Panda/Esp32-HomeAutomation/refs/heads/main/IMG-20250810-WA0017.jpg]]
 # Circuit Diagrams
 
-![[Pasted image 20250810105954.png]]
-![[Pasted image 20250810110213.png]]
+![[https://raw.githubusercontent.com/Rudra0Panda/Esp32-HomeAutomation/refs/heads/main/Pasted%20image%2020250810105954.png]]
+![[https://raw.githubusercontent.com/Rudra0Panda/Esp32-HomeAutomation/refs/heads/main/Pasted%20image%2020250810110213.png]]
 
 # Conclusion
 Our team successfully accomplished the goals of the ESP32 Home Automation project by creating a system that offers seamless remote control, instant status monitoring, and automated scheduling to promote energy efficiency. The modular and scalable architecture ensures adaptability for future upgrades and the integration of additional devices or sensors. This project was a complete learning journey—strengthening our expertise in IoT hardware–software integration, web interface development, and network troubleshooting. Most importantly, it enhanced our team collaboration, problem-solving mindset, and real-world project execution skills, preparing us to take on more advanced and impactful IoT innovations in the future.
